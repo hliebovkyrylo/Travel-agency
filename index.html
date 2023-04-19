@@ -4,9 +4,238 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Landing page</title>
 </head>
 <body>
-    
+    <!------------------- HEADER ------------------->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <ul class="nav__items">
+                    <li class="link"><a class="nav__links" href="#">Experience</a></li>
+                    <li><a class="nav__links" href="#">Travel Guide</a></li>
+                </ul>
+                <ul class="nav__items">
+                    <li class="link"><a class="nav__links" href="#">Pricing</a></li>
+                    <li><a class="nav__links" href="#">Help</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!------------------- INTRO ------------------->
+    <section class="sectionIntro">
+        <div class="container">
+            <div class="introItems">
+                <h1 class="introTitle">Travel to any corner of the world</h1>
+                <div class="introSubtitle">Feeling cool like your favourite place</div>
+                <button class="introButton" type="button">Get Started <img src="./img/icons/arrow-right.svg" alt=""></button>
+            </div>
+        </div>
+    </section>
+
+    <!------------------- DISCOVER ------------------->
+    <section class="discover">
+        <div class="container">
+            <div class="discoverItems">
+                <div class="discoverImages">
+                    <img class="discoverImg" src="./img/img/discoverImage.jpg" alt="">
+                    <ul class="dots">
+                        <li class="discoverDots active">.</li>
+                        <li class="discoverDots">.</li>
+                        <li class="discoverDots">.</li>
+                        <li class="discoverDots">.</li>
+                    </ul>
+                </div>
+                <div class="discoverText">
+                    <h2 class="sectionTitle">Discover the world with us</h2>
+                    <div class="introSubtitle subtitleDiscover">From travel planning to touchdown, we take all the hassle out of travel. Whether you are navigating travel regulations, looking into a special request or need help booking a pet-friendly flight, our Concierge team will ensure all steps of your journey are stress-free.</div>
+                    <button class="introButton discoverButton" type="button">Get Started</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!------------------- IMAGE SECTION ------------------->
+    <section class="imageSection"></section>
+
+    <!------------------- WE DO ------------------->
+    <section class="WeDo">
+        <div class="container">
+            <h2>What we do</h2>
+        </div>
+        <div class="slider" id="slider">
+            <div class="slider__inner" id="slides">
+                <div class="slider__items">
+                    <img src="./img/slider/1.jpg" class="img"></img>
+                </div>
+                <div class="slider__items">
+                    <img src="./img/slider/2.jpg" class="img"></img>
+                </div>
+                <div class="slider__items">
+                    <img src="./img/slider/3.jpg" class="img"></img>
+                </div>
+                <div class="slider__items">
+                    <img src="./img/slider/4.jpg" class="img"></img>
+                </div>
+                <div class="slider__items">
+                    <img src="./img/slider/5.jpg" class="img"></img>
+                </div>
+                <div class="slider__items">
+                    <img src="./img/img/discoverImage.jpg" class="img"></img>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!------------------- PLACES ------------------->
+    <section class="places">
+        <div class="container">
+            <h2>Amazing places we bring to you</h2>
+        </div>
+        <div class="content">
+            <div class="places__slider">
+                <button class="preBtn"><img src="./img/icons/arrow-right.svg" alt=""></button>
+                <button class="nextBtn"><img src="./img/icons/arrow-right.svg" alt=""></button>
+                <div class="card">
+                    <img src="./img/cards/1.jpg" alt="">
+                    <div class="cardTitle">Lorem Ipsum</div>
+                    <div class="cardSubtitle">Amet minim mollit non deserunt ullamco est sit aliqua dolor do</div>
+                    <div class="cardTitle">N20,000</div>
+                </div>
+            </div>
+            <div class="places__slider">
+                <button class="preBtn"><img src="./img/icons/arrow-right.svg" alt=""></button>
+                <button class="nextBtn"><img src="./img/icons/arrow-right.svg" alt=""></button>
+                <div class="card">
+                    <img src="./img/cards/2.jpg" alt="">
+                    <div class="cardTitle">Lorem Ipsum</div>
+                    <div class="cardSubtitle">Amet minim mollit non deserunt ullamco est sit aliqua dolor do</div>
+                    <div class="cardTitle">N20,000</div>
+                </div>
+            </div>
+            <div class="places__slider">
+                <button class="preBtn"><img src="./img/icons/arrow-right.svg" alt=""></button>
+                <button class="nextBtn"><img src="./img/icons/arrow-right.svg" alt=""></button>
+                <div class="card">
+                    <img src="./img/cards/3.jpg" alt="">
+                    <div class="cardTitle">Lorem Ipsum</div>
+                    <div class="cardSubtitle">Amet minim mollit non deserunt ullamco est sit aliqua dolor do</div>
+                    <div class="cardTitle">N20,000</div>
+                </div>
+            </div>
+            <div class="places__slider">
+                <button class="preBtn"><img src="./img/icons/arrow-right.svg" alt=""></button>
+                <button class="nextBtn"><img src="./img/icons/arrow-right.svg" alt=""></button>
+                <div class="card">
+                    <img src="./img/cards/4.jpg" alt="">
+                    <div class="cardTitle">Lorem Ipsum</div>
+                    <div class="cardSubtitle">Amet minim mollit non deserunt ullamco est sit aliqua dolor do</div>
+                    <div class="cardTitle">N20,000</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!------------------- COMMENTS SECTION ------------------->
+    <section class="comments">
+        <div class="container">
+            <h2>What our users say about us</h2>
+        </div>
+        <div class="comments__inner">
+            <div class="comments__items">
+                <div class="commentText">Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip.</div>
+                <img class="commentPhoto" src="./img/photo/1.png" alt="">
+                <div class="commentName">Savannah Nguyen</div>
+            </div>
+
+            <div class="comments__items active">
+                <div class="commentText active">Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip.</div>
+                <img class="commentPhoto active" src="./img/photo/2.png" alt="">
+                <div class="commentName active">Savannah Nguyen</div>
+            </div>
+
+            <div class="comments__items">
+                <div class="commentText">Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip.</div>
+                <img class="commentPhoto" src="./img/photo/3.png" alt="">
+                <div class="commentName">Savannah Nguyen</div>
+            </div>
+        </div>
+    </section>
+
+    <!------------------- LOGOS ------------------->
+    <section class="logos">
+        <a href="#">
+            <img src="./img/logos/1.png" alt="">
+        </a>
+        <a href="#">
+            <img src="./img/logos/2.png" alt="">
+        </a>
+        <a href="#">
+            <img src="./img/logos/3.png" alt="">
+        </a>
+        <a href="#">
+            <img src="./img/logos/4.png" alt="">
+        </a>
+        <a href="#">
+            <img src="./img/logos/5.png" alt="">
+        </a>
+    </section>
+
+    <!------------------- START ------------------->
+    <section class="start">
+        <h2 class="startTitle">Book now to start that adventure</h2>
+        <form class="startInputs">
+            <select class="input" name="Destination" id="">
+                <option value="0">Destination</option>
+                <option value="0">Lorem</option>
+                <option value="0">Ipsum</option>
+                <option value="0">Dolor</option>
+            </select>
+            <select class="input" name="Member" id="">
+                <option value="0">Member</option>
+                <option value="0">Lorem</option>
+                <option value="0">Ipsum</option>
+                <option value="0">Dolor</option>
+            </select>
+            <input class="input" type="date">
+            <button class="introButton discoverButton" type="button">Book Now</button>
+        </form>
+    </section>
+
+    <!------------------- SUBSCRIBE ------------------->
+    <section class="section">
+        <div class="container">
+            <div class="subscribe">
+                <h2 class="subscribeTitle">Subscribe to get best traveling packages and updates</h2>
+                <div class="introSubtitle subscribe">We love useful stuff, and we love quality writing, that's why we send out an editorial email newsletter</div>
+                <form class="subscribeForm" action="#">
+                    <input class="input email" type="email" placeholder="Email Address">
+                    <button type="submit" class="introButton discoverButton" type="button">Book Now</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!------------------- FOOTER ------------------->
+    <footer class="footer">
+        <div class="footerItem">
+            <div class="footerTitle">Quick Links</div>
+            <div class="footerLinks"><a class="footerLinks" href="#">Home</a></div>
+            <div class="footerLinks"><a class="footerLinks" href="#">About</a></div>
+            <div class="footerLinks"><a class="footerLinks" href="#">Contact</a></div>
+        </div>
+        <div class="footerItem">
+            <div class="footerTitle">Company</div>
+            <div class="footerLinks"><a class="footerLinks" href="#">Tour</a></div>
+            <div class="footerLinks"><a class="footerLinks" href="#">Pricing</a></div>
+            <div class="footerLinks"><a class="footerLinks" href="#">Locations</a></div>
+        </div>
+    </footer>
+
+    <!-------- JS --------->
+    <script src="./js/main.js"></script>
 </body>
 </html>

@@ -1,0 +1,392 @@
+@import url(./components/header.css);
+@import url(./components/footer.css);
+
+body {
+    font-family: 'Sen', sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    color: #fff;
+    font-size: 60px;
+}
+
+h2 {
+    color: #000;
+    font-size: 50px;
+    max-width: 496px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* ====== CONTAINER ====== */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+/* ====== CONTAINER END!!! ====== */
+
+/* ====== INTRO ====== */
+.sectionIntro {
+    width: 100%;
+    height: 100vh;
+    background: url(../img/backgrounds/introBG.jpg) center no-repeat;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+}
+
+.introItems {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 576px;
+}
+
+/* intro items */
+
+.introSubtitle {
+    margin: 24px 0 64px 0;
+    color: #b4b4b4;
+    font-size: 24px;
+}
+
+.introButton {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding: 17px 20px;
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer;
+
+    background-color: #fab050;
+    color: #fff;
+    font-family: 'Sen', sans-serif;
+    font-size: 18px;
+}
+
+.introButton:hover {
+    background-color: #fdb960;
+}
+
+/* ====== INTRO END!!! ====== */
+
+/* ====== DISCOVER ====== */
+
+.discover {
+    margin: 87px 0 123px 0;
+}
+
+.discoverItems {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* images */
+
+.discoverImages {
+    max-width: 500px;
+}
+
+.discoverImg {
+    object-fit: cover;
+    max-width: 500px;
+    height: 600px;
+}
+
+.dots {
+    display: flex;
+    width: 141px;
+    list-style: none;
+    padding-inline-start: 0;
+    margin: 40px auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.discoverDots {
+    color: #fab050;
+    margin: 0 13px 10px 13px;
+    cursor: pointer;
+}
+
+.discoverDots.active {
+    border: 2px solid #fab050;
+    color: #f7a842;
+    padding: 0 13px 10px 13px;
+    border-radius: 50px;
+    margin: 0;
+}
+
+/* text */
+
+.discoverText {
+    max-width: 496px;
+    margin-top: 59px;
+}
+
+.subtitleDiscover {
+    font-size: 20px;
+}
+
+.discoverButton {
+    margin: 0;
+}
+
+/* ====== DISCOVER END!!! ====== */
+
+/* ====== IMAGE SECTION ====== */
+
+.imageSection {
+    width: 100%;
+    height: 800px;
+
+    background: url(../img/backgrounds/sectionImg.jpg) center no-repeat;
+    background-size: cover;
+
+    margin-bottom: 120px;
+}
+
+/* ====== IMAGE SECTION END!!! ====== */
+
+/* ====== SLIDER ====== */
+
+.slider {
+    margin: 89px 0 177px 0;
+    width: 2100px;
+}
+
+.slider__inner {
+    display: flex;
+}
+
+.img {
+    height: 400px;
+    width: 350px;
+    margin-right: 25px;
+
+    transform: scale3d(1,1,1);
+	transition: transform .2s ease-in-out;
+}
+
+.img:hover {
+    transform: scale(1.1);
+	transition: transform .2s linear;
+}
+
+/* ====== PLACES ====== */
+
+.places {
+    position: relative;
+}
+
+.content {
+    display: flex;
+    margin: 72px 0 177px 370px;
+}
+
+.card {
+    max-width: 356px;
+    margin-right: 60px;
+}
+
+.cardTitle {
+    font-size: 22px;
+    color: #000;
+    font-weight: 700;
+    margin: 24px 0 16px 0;
+}
+
+.cardSubtitle {
+    font-size: 16px;
+    color: #b4b4b4;
+}
+
+.preBtn,
+.nextBtn {
+    position: absolute;
+    border: none;
+    border-radius: 50%;
+    background-color: #c9c9c9;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 9999;
+    opacity: 0.5;
+}
+
+.preBtn {
+    left: 0;
+    transform: rotate(180deg);
+}
+
+.nextBtn {
+    right: 0;
+}
+
+/* ====== PLACES END!!! ====== */
+
+/* ====== COMMENTS ====== */
+
+.comments__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.comments__items {
+    text-align: center;
+    width: 470px;
+    border: 3px solid #FFA737;
+    border-radius: 17px;
+    cursor: pointer;
+}
+
+.comments__items.active {
+    width: 699px;
+}
+
+.comments__items:nth-child(2) {
+    margin: 0 55px;
+}
+
+.commentText {
+    color: #000;
+    font-size: 16px;
+    margin: 20px 49px;
+}
+
+.commentPhoto {
+    width: 37px;
+    height: 37px;
+    margin: 21px 0;
+}
+
+.commentName {
+    font-size: 16px;
+    color: #000;
+    font-weight: 700;
+    margin-bottom: 19px;
+}
+
+/* styles for active elements */
+
+.commentText.active {
+    font-size: 24px;
+}
+
+.commentPhoto.active {
+    width: 56px;
+    height: 56px;
+} 
+
+.commentName.active {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+/* ====== COMMENTS END!!! ====== */
+
+/* ====== LOGOS ====== */
+
+.logos {
+    max-width: 1600px;
+    margin: 240px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ====== LOGOS END!!! ====== */
+
+/* ====== START ====== */
+
+.start {
+    background-color: #f7a842;
+    border-radius: 20px;
+    width: 1300px;
+    margin: 0 auto 200px auto;
+}
+
+.startTitle {
+    color: #ffffff;
+    margin: 0 auto 80px auto;
+    text-align: center;
+    padding-top: 80px;
+}
+
+/* inputs */
+
+.startInputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1100px;
+    margin: 0 auto;
+    padding: 43px 0;
+    background-color: #fff;
+}
+
+.input {
+    padding: 14px 24px;
+    max-height: 47px;
+    font-family: 'Sen', sans-serif;
+    border-radius: 5px;
+    border: 1px solid #000;
+    margin-right: 64px;
+    width: 195px;
+}
+
+/* ====== START ====== */
+
+/* ====== SUBSCRIBE ====== */
+
+.subscribeTitle {
+    max-width: 790px;
+    margin: 0 auto;
+}
+
+.introSubtitle.subscribe {
+    margin: 24px auto 56px auto;
+    width: 580px;
+}
+
+.subscribe {
+    text-align: center;
+}
+
+.subscribeForm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input.email {
+    margin-right: 0;
+    border-radius: 5px 0 0 5px;
+    border: 0;
+    background-color: #ecfbff;
+}
+
+.introButton.discoverButton.email {
+    height: 47px;
+    border-radius: 0 10px 10px 0;
+}

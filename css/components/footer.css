@@ -1,0 +1,27 @@
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+
+    background-color: #FFA737;
+}
+
+.footerItem {
+    text-align: start;
+    margin: 56px 0 99px 0;
+}
+
+.footerItem:first-child {
+    margin-right: 71px;
+}
+
+.footerTitle {
+    color: #fff;
+    font-size: 24px;
+}
+
+.footerLinks {
+    color: #fff;
+    margin-top: 16px;
+}
