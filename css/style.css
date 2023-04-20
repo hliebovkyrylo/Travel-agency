@@ -107,8 +107,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .discoverImg {
     object-fit: cover;
+    display: none;
     max-width: 500px;
     height: 600px;
+}
+
+.discoverImg.active {
+    display: block;
 }
 
 .dots {
@@ -123,15 +128,18 @@ h1, h2, h3, h4, h5, h6 {
 
 .discoverDots {
     color: #fab050;
-    margin: 0 13px 10px 13px;
+    padding: 0 13px 10px 13px;
     cursor: pointer;
+    border-radius: 50px;
+}
+
+.discoverDots:hover {
+    background-color: #ececec;
 }
 
 .discoverDots.active {
     border: 2px solid #fab050;
     color: #f7a842;
-    padding: 0 13px 10px 13px;
-    border-radius: 50px;
     margin: 0;
 }
 
