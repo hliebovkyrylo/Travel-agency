@@ -1,5 +1,6 @@
 @import url(./components/header.css);
 @import url(./components/footer.css);
+@import url(./mediaBreakpoints.css);
 
 body {
     font-family: 'Sen', sans-serif;
@@ -169,11 +170,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .slider {
     margin: 89px 0 177px 0;
-    width: 2100px;
+    overflow: hidden;
 }
 
 .slider__inner {
     display: flex;
+    /* width: 2100px; */
 }
 
 .img {
@@ -194,6 +196,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .places {
     position: relative;
+    overflow: hidden;
 }
 
 .content {
@@ -322,7 +325,8 @@ h1, h2, h3, h4, h5, h6 {
 .start {
     background-color: #f7a842;
     border-radius: 20px;
-    width: 1300px;
+    width: 100%;
+    max-width: 1300px;
     margin: 0 auto 200px auto;
 }
 
@@ -339,7 +343,8 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1100px;
+    width: 100%;
+    max-width: 1100px;
     margin: 0 auto;
     padding: 43px 0;
     background-color: #fff;
@@ -366,7 +371,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .introSubtitle.subscribe {
     margin: 24px auto 56px auto;
-    width: 580px;
+    max-width: 580px;
 }
 
 .subscribe {

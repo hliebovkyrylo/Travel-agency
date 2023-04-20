@@ -1,0 +1,96 @@
+@media (max-width: 999px) {
+    /* header */
+    .nav {
+        display: none;
+    }
+
+    .button span {
+        display: block;
+    }
+
+    /* discover */
+
+    .discoverItems {
+        display: block !important;
+        text-align: center;
+    }
+
+    .discoverImages,
+    .discoverText,
+    .introButton.discoverButton {
+        margin: 0 auto;
+    }
+
+    /* logos */
+
+    .logos,
+    .logos a {
+        display: block !important;
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .introButton.discoverButton.subscribe {
+        margin: 0;
+    }
+}
+
+@media (max-width: 860px) {
+    /* comments */
+    .comments__inner {
+        display: block !important;
+        margin-top: 50px;
+    }
+
+    .comments__items {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .comments__items.active {
+        width: 100% !important;
+        max-width: 100%;
+        margin: 40px 0 !important;
+    }
+
+    .content {
+        margin: 72px 0 177px 37px !important;
+    }
+
+    /* inputs */
+
+    .startInputs {
+        display: block !important;
+        text-align: center;
+    }
+
+    .input {
+        margin: 7px 0 !important;
+    }
+
+    /* footer */
+    .footer {
+        display: block;
+    }
+
+    .footerItem {
+        text-align: center;
+        margin: 30px 0 0 0;
+        width: 100%;
+    }
+}
+
+@media (max-width: 520px) {
+    .discoverImg {
+        max-width: 200px;
+        max-height: 300px;
+        object-fit: cover;
+    }
+
+    .comments__items {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 270px;
+    }
+}

@@ -1,3 +1,5 @@
+@import url(../mediaBreakpoints.css);
+
 .header {
     position: absolute;
     width: 100%;
@@ -48,4 +50,35 @@
     width: 100%;
     color: #fdb960;
     transform: scaleX(1);
+}
+
+/* nav toggle */
+
+.button span {
+    display: none;
+    height: 3px;
+    width: 30px;
+    background: #fff;
+    margin-top: 7px;
+    z-index: 4000;
+    transition: all .5s ease-in-out;
+}
+
+.button span:first-child {
+    margin-top: 0;
+}
+
+.toggleItems {
+    display: none;
+    position: absolute;
+    margin-top: 70px;
+    left: 0;
+    top: 0;
+    height: calc(100vh - 70px);
+    width: 100%;
+    z-index: 2000;
+    text-align: center;
+    background-color: #ffffff;
+    transition: .5s ease-in-out;
+    transform: translateX(-1000px);
 }

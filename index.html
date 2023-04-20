@@ -22,6 +22,33 @@
                     <li><a class="nav__links" href="#">Help</a></li>
                 </ul>
             </nav>
+            <div class="menu">
+                <div class="button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <nav class="toggleItems">
+                    <div class="items">
+                        <a href="./index.html" class="nav__link inNavToggle">Home</a>
+                    </div>
+                    <div class="items">
+                        <a href="./pages/product.html" class="nav__link inNavToggle">Product</a>
+                    </div>
+                    <div class="items">
+                        <a href="./pages/pricing.html" class="nav__link inNavToggle">Pricing</a>
+                    </div>
+                    <div class="items">
+                        <a href="./pages/about-us.html" class="nav__link inNavToggle">About Us</a>
+                    </div>
+                    <div class="items">
+                        <a href="./pages/contact.html" class="nav__link inNavToggle">Contact</a>
+                    </div>
+                    <div class="items">
+                        <a href="./pages/blog.html" class="nav__link inNavToggle">Blog</a>
+                    </div>
+                </nav>
+            </div>
         </div>
     </header>
 
@@ -188,19 +215,25 @@
     <section class="start">
         <h2 class="startTitle">Book now to start that adventure</h2>
         <form class="startInputs">
-            <select class="input" name="Destination" id="">
-                <option value="0">Destination</option>
-                <option value="0">Lorem</option>
-                <option value="0">Ipsum</option>
-                <option value="0">Dolor</option>
-            </select>
-            <select class="input" name="Member" id="">
-                <option value="0">Member</option>
-                <option value="0">Lorem</option>
-                <option value="0">Ipsum</option>
-                <option value="0">Dolor</option>
-            </select>
-            <input class="input" type="date">
+            <div class="inputDiv">
+                <select class="input" name="Destination" id="">
+                    <option value="0">Destination</option>
+                    <option value="0">Lorem</option>
+                    <option value="0">Ipsum</option>
+                    <option value="0">Dolor</option>
+                </select>
+            </div>
+            <div class="inputDiv">
+                <select class="input" name="Member" id="">
+                    <option value="0">Member</option>
+                    <option value="0">Lorem</option>
+                    <option value="0">Ipsum</option>
+                    <option value="0">Dolor</option>
+                </select>
+            </div>
+            <div class="inputDiv">
+                <input class="input" type="date">
+            </div>
             <button class="introButton discoverButton" type="button">Book Now</button>
         </form>
     </section>
@@ -213,7 +246,7 @@
                 <div class="introSubtitle subscribe">We love useful stuff, and we love quality writing, that's why we send out an editorial email newsletter</div>
                 <form class="subscribeForm" action="#">
                     <input class="input email" type="email" placeholder="Email Address">
-                    <button type="submit" class="introButton discoverButton" type="button">Book Now</button>
+                    <button type="submit" class="introButton discoverButton subscribe" type="button">Book Now</button>
                 </form>
             </div>
         </div>
