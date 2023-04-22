@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
     <title>Landing page</title>
 </head>
 <body>
@@ -96,28 +100,19 @@
         <div class="container">
             <h2>What we do</h2>
         </div>
-        <div class="slider" id="slider">
-            <div class="slider__inner" id="slides">
-                <div class="slider__items">
-                    <img src="./img/slider/1.jpg" class="img"></img>
-                </div>
-                <div class="slider__items">
-                    <img src="./img/slider/2.jpg" class="img"></img>
-                </div>
-                <div class="slider__items">
-                    <img src="./img/slider/3.jpg" class="img"></img>
-                </div>
-                <div class="slider__items">
-                    <img src="./img/slider/4.jpg" class="img"></img>
-                </div>
-                <div class="slider__items">
-                    <img src="./img/slider/5.jpg" class="img"></img>
-                </div>
-                <div class="slider__items">
-                    <img src="./img/img/discoverImage.jpg" class="img"></img>
-                </div>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./img/slider/1.jpg"></img></div>
+                <div class="swiper-slide"><img src="./img/slider/2.jpg"></img></div>
+                <div class="swiper-slide"><img src="./img/slider/3.jpg"></img></div>
+                <div class="swiper-slide"><img src="./img/slider/4.jpg"></img></div>
+                <div class="swiper-slide"><img src="./img/slider/5.jpg"></img></div>
+                <div class="swiper-slide"><img src="./img/cards/3.jpg"></div>
+                <div class="swiper-slide"><img src="./img/cards/4.jpg"></div>
+                <div class="swiper-slide"><img src="./img/img/discoverImage.jpg"></div>
+                <div class="swiper-slide"><img src="./img/cards/2.jpg"></div>
             </div>
-        </div>
+          </div>
     </section>
 
     <!------------------- PLACES ------------------->
@@ -272,6 +267,7 @@
     </footer>
 
     <!-------- JS --------->
-    <script src="./js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script type="module" src="./js/main.js"></script>
 </body>
 </html>
