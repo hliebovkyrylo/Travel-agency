@@ -85,6 +85,7 @@
     .discoverImg {
         max-width: 200px;
         max-height: 300px;
+        margin: 0 auto;
         object-fit: cover;
     }
 
@@ -92,5 +93,29 @@
         margin: 0 auto;
         width: 100%;
         max-width: 270px;
+    }
+}
+
+@media (max-width: 420px) {
+    .content {
+        margin: 72px 0 177px 30px !important;
+    }
+}
+
+@media (max-width: 395px) {
+    .content {
+        margin: 72px 0 177px 15px !important;
+    }
+}
+
+@media (max-width: 375px) {
+    .content {
+        margin: 72px 0 177px 10px !important;
+    }
+}
+
+@media (max-width: 360px) {
+    .content {
+        margin: 72px 0 177px 3px !important;
     }
 }

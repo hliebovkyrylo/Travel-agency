@@ -43,11 +43,12 @@ let swiper = new Swiper(".swiper", {
     },
     breakpoints: {
         270: {
-            slidesPerView: 1
+            slidesPerView: 1,
+            spaceBetween: 40,
         },
-        640: {
+        348: {
             slidesPerView: 2,
-            spaceBetween: 20,
+            spaceBetween: 40,
         },
         768: {
             slidesPerView: 3,
@@ -62,4 +63,39 @@ let swiper = new Swiper(".swiper", {
             spaceBetween: 50,
         },
       },
+});
+
+////// slider with buttons //////
+const sliderContent = document.querySelector('.places__slider');
+const sliderItems = document.querySelectorAll('.card');
+const prevBtn = document.querySelector('.preBtn');
+const nextBtn = document.querySelector('.nextBtn');
+const sliderItemWidth = sliderItems[0].offsetWidth;
+const sliderItemMarginRight = parseInt(window.getComputedStyle(sliderItems[0]).marginRight);
+let sliderVisibleItems = 1;
+let sliderIndex = 0;
+
+function moveSlider(direction) {
+    if (direction === 'prev') {
+        sliderIndex = Math.max(sliderIndex - 1, 0);
+    } else {
+        if (window.innerWidth > 1281) {
+            sliderVisibleItems = 4;
+        } else if (window.innerWidth > 428) {
+            sliderVisibleItems = 2;
+        } else {
+            sliderVisibleItems = 1;
+        }
+
+        sliderIndex = Math.min(sliderIndex + 1, sliderItems.length - sliderVisibleItems);
+    }
+    sliderContent.style.transform = `translateX(-${sliderIndex * (sliderItemWidth + sliderItemMarginRight)}px)`;
+}
+
+prevBtn.addEventListener('click', () => {
+    moveSlider('prev');
+});
+
+nextBtn.addEventListener('click', () => {
+    moveSlider('next');
 });

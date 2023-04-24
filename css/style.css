@@ -214,8 +214,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .content {
-    display: flex;
     margin: 72px 0 177px 370px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.places__slider {
+    display: flex;
 }
 
 .card {
@@ -223,11 +228,19 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: 60px;
 }
 
+.title {
+    margin: 24px 0 16px 0;
+}
+
 .cardTitle {
     font-size: 22px;
     color: #000;
     font-weight: 700;
-    margin: 24px 0 16px 0;
+    margin-top: 24px;
+}
+
+.cardTitle:nth-child(1):hover {
+    text-decoration: #000 underline;
 }
 
 .cardSubtitle {
@@ -239,6 +252,7 @@ h1, h2, h3, h4, h5, h6 {
 .nextBtn {
     position: absolute;
     border: none;
+    top: 43%;
     border-radius: 50%;
     background-color: #c9c9c9;
     height: 30px;
