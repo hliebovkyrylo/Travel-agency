@@ -81,7 +81,7 @@ function moveSlider(direction) {
     } else {
         if (window.innerWidth > 1281) {
             sliderVisibleItems = 4;
-        } else if (window.innerWidth > 428) {
+        } else if (window.innerWidth > 728) {
             sliderVisibleItems = 2;
         } else {
             sliderVisibleItems = 1;

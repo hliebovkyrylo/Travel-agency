@@ -1,4 +1,4 @@
-@media (max-width: 999px) {
+@media (max-width: 1024px) {
     /* header */
 
     .menu {
@@ -7,6 +7,10 @@
 
     .nav {
         display: none;
+    }
+
+    .content {
+        margin: 72px 0 177px  !important;
     }
 
     /* discover */
@@ -38,7 +42,7 @@
 
 @media (max-width: 860px) {
     .content {
-        margin: 72px 0 177px 37px !important;
+        margin: 72px 0 177px 23px !important;
     }
 
     /* inputs */
@@ -64,6 +68,18 @@
     }
 }
 
+@media (max-width: 768px) {
+    .content {
+        margin: 72px 0 177px 0 !important;
+    }
+}
+
+@media (max-width: 568px) {
+    .content {
+        margin: 72px 0 177px 110px !important;
+    }
+}
+
 @media (max-width: 520px) {
     .discoverImg {
         max-width: 200px;
@@ -79,7 +95,7 @@
     }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 482px) {
     .content {
         margin: 72px 0 177px 30px !important;
     }

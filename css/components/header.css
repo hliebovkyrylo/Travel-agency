@@ -112,7 +112,7 @@
     z-index: 2000;
     text-align: center;
     background-color: #ffffff;
-    transform: translateX(-1000px);
+    transform: translateX(-1200px);
     transition: all .5s linear;
 }
 
