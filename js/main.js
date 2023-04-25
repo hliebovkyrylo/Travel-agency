@@ -99,3 +99,16 @@ prevBtn.addEventListener('click', () => {
 nextBtn.addEventListener('click', () => {
     moveSlider('next');
 });
+
+////// toggle //////
+let button = document.querySelector('.button');
+let toggleItems = document.querySelector('.toggleItems');
+let headerCollor = document.querySelector('.header');
+const body = document.body;
+
+button.addEventListener('click', () => {
+    button.classList.toggle('active');
+    toggleItems.classList.toggle('active');
+    headerCollor.classList.toggle('active');
+    body.classList.toggle('blocked');
+});

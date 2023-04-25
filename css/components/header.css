@@ -5,6 +5,12 @@
     width: 100%;
     top: 0;
     left: 0;
+
+    transition: all .5s linear;
+}
+
+.header.active {
+    background-color: #fdb960;
 }
 
 .nav {
@@ -54,14 +60,41 @@
 
 /* nav toggle */
 
-.button span {
+.menu {
     display: none;
+}
+
+.button span {
+    display: block;
     height: 3px;
     width: 30px;
     background: #fff;
     margin-top: 7px;
+    border-radius: 5px;
     z-index: 4000;
     transition: all .5s ease-in-out;
+}
+
+.button.active span:nth-child(1) {
+    animation: animate 600ms ease-in-out forwards;
+}
+
+.button.active span:nth-child(2) {
+    width: 0;
+}
+
+.button.active span:nth-child(3) {
+    animation: animate2 600ms ease-in-out forwards;
+}
+
+@keyframes animate {
+    50% {transform: translateY(0px) rotate(0deg);}
+    100% {transform: rotate(45deg) translateY(6px) translateX(8px);}
+}
+
+@keyframes animate2 {
+    50% {transform: translateY(0px) rotate(0deg);}
+    100% {transform: rotate(-45deg) translateY(-6px) translateX(8px);}
 }
 
 .button span:first-child {
@@ -69,16 +102,34 @@
 }
 
 .toggleItems {
-    display: none;
+    display: block;
     position: absolute;
-    margin-top: 70px;
     left: 0;
+    margin-top: 53px;
     top: 0;
-    height: calc(100vh - 70px);
+    height: calc(100vh - 53px);
     width: 100%;
     z-index: 2000;
     text-align: center;
     background-color: #ffffff;
-    transition: .5s ease-in-out;
     transform: translateX(-1000px);
+    transition: all .5s linear;
+}
+
+.toggleItems.active {
+    transform: translateX(0);
+}
+
+.toggle__link {
+    color: #007aff;
+    font-size: 30px;
+    font-family: 'Sen', sans-serif;
+}
+
+.items {
+    margin-top: 25px;
+}
+
+.items:first-child {
+    margin-top: 40px;
 }

@@ -8,6 +8,12 @@ body {
     overflow-x: hidden;
 }
 
+body.blocked {
+    touch-action: none;
+    overscroll-behavior: none;
+    overflow-y: hidden;
+}
+
 a {
     text-decoration: none;
 }
@@ -276,72 +282,11 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ====== PLACES END!!! ====== */
 
-/* ====== COMMENTS ====== */
-
-.comments__inner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.comments__items {
-    text-align: center;
-    width: 470px;
-    border: 3px solid #FFA737;
-    border-radius: 17px;
-    cursor: pointer;
-}
-
-.comments__items.active {
-    width: 699px;
-}
-
-.comments__items:nth-child(2) {
-    margin: 0 55px;
-}
-
-.commentText {
-    color: #000;
-    font-size: 16px;
-    margin: 20px 49px;
-}
-
-.commentPhoto {
-    width: 37px;
-    height: 37px;
-    margin: 21px 0;
-}
-
-.commentName {
-    font-size: 16px;
-    color: #000;
-    font-weight: 700;
-    margin-bottom: 19px;
-}
-
-/* styles for active elements */
-
-.commentText.active {
-    font-size: 24px;
-}
-
-.commentPhoto.active {
-    width: 56px;
-    height: 56px;
-} 
-
-.commentName.active {
-    font-size: 24px;
-    margin-bottom: 30px;
-}
-
-/* ====== COMMENTS END!!! ====== */
-
 /* ====== LOGOS ====== */
 
 .logos {
     max-width: 1600px;
-    margin: 240px auto;
+    margin: 0 auto 240px auto;
     display: flex;
     justify-content: space-between;
 }

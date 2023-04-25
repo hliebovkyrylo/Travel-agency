@@ -1,11 +1,12 @@
 @media (max-width: 999px) {
     /* header */
-    .nav {
-        display: none;
+
+    .menu {
+        display: block;
     }
 
-    .button span {
-        display: block;
+    .nav {
+        display: none;
     }
 
     /* discover */
@@ -36,24 +37,6 @@
 }
 
 @media (max-width: 860px) {
-    /* comments */
-    .comments__inner {
-        display: block !important;
-        margin-top: 50px;
-    }
-
-    .comments__items {
-        margin: 0 auto;
-        width: 100%;
-        max-width: 400px;
-    }
-
-    .comments__items.active {
-        width: 100% !important;
-        max-width: 100%;
-        margin: 40px 0 !important;
-    }
-
     .content {
         margin: 72px 0 177px 37px !important;
     }
